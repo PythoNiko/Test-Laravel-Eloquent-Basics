@@ -9,5 +9,10 @@ class Morningnews extends Model
 {
     use HasFactory;
 
+    /**
+     * @inheritDoc
+     */
+    protected $table = 'morning_news';
+
     protected $fillable = ['title', 'news_text'];
 }
